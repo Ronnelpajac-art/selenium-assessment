@@ -126,6 +126,7 @@ public class AssessmentTest extends BaseTest {
 
          // Verify New Window
         leftMenu.clickNewBrowserWindowSubMenu();
+        Assert.assertTrue(newWindowPage.isPageTitleDisplayed(), "Page title is not displayed in the new window");
         String originalWindow = driver.getWindowHandle();
         newWindowPage.clickNewWindowBtnAndSwitch();
         Assert.assertTrue(newWindowPage.isTableExampleDisplayed(), "Page title is not displayed in the new window");

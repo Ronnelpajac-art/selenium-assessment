@@ -2,12 +2,11 @@ package base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import page.FormPage;
 
-public class BaseTest {  // ✅ Class name should be capitalized: BaseTest, not baseTest
+public class BaseTest {
 
     protected WebDriver driver;
     protected FormPage formPage;
